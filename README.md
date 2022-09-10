@@ -42,5 +42,5 @@ This project is licensed under the terms of the [MIT license](https://opensource
 
 ## Links
 
-* [Documentation](https://???)
-* [Source code](https://github.com/)
+* [Documentation](https://github.com/Vonage/js-math-utils/wiki)
+* [Source code](https://github.com/Vonage/js-math-utils)
