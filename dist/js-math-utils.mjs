@@ -1,13 +1,19 @@
-var l = Object.defineProperty;
-var i = (e, t, s) => t in e ? l(e, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : e[t] = s;
-var h = (e, t, s) => (i(e, typeof t != "symbol" ? t + "" : t, s), s);
-function r(e, t, s) {
+var n = Object.defineProperty;
+var r = (e, t, s) => t in e ? n(e, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : e[t] = s;
+var h = (e, t, s) => (r(e, typeof t != "symbol" ? t + "" : t, s), s);
+function i(...e) {
+  let t = 0;
+  for (const s of e)
+    t += Array.isArray(s) ? s.reduce((u, a) => u + a, 0) : s;
+  return t;
+}
+function o(e, t, s) {
   return Math.max(t, Math.min(s, e));
 }
-function o(e, t, s, u, a) {
+function c(e, t, s, u, a) {
   return (a - u) * (e - t) / (s - t) + u;
 }
-class c {
+class m {
   constructor(t) {
     h(this, "sum", 0);
     h(this, "values", []);
@@ -28,7 +34,8 @@ class c {
   }
 }
 export {
-  c as MobileAverage,
-  r as clip,
-  o as map
+  m as MobileAverage,
+  o as clip,
+  c as map,
+  i as sum
 };
