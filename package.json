@@ -1,0 +1,36 @@
+{
+  "name": "js-math-utils",
+  "version": "1.0.0",
+  "description": "Simple library providing math utilities",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "typedoc": "typedoc --theme github-wiki src/index.ts",
+    "prettier": "prettier --write ./src ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "repo"
+  },
+  "keywords": [
+    "library",
+    "math"
+  ],
+  "author": {
+    "name": "Remi Deltombe",
+    "email": "remi.deltombe@vongage.com",
+    "url": "https://www.vonage.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.23.1",
+    "typedoc": "^0.23.14",
+    "typedoc-github-wiki-theme": "^1.0.1",
+    "typedoc-plugin-markdown": "^3.13.6",
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.4.1",
+    "vitest": "^0.23.1"
+  }
+}
