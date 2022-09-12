@@ -1,5 +1,5 @@
 {
-  "name": "js-math-utils",
+  "name": "@vonage/js-math-utils",
   "version": "1.0.0",
   "description": "Simple library providing math utilities",
   "types": "./dist/index.d.ts",
